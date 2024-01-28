@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://thecityfix.com/wp-content/uploads/2019/10/JakartaRW_IT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #00eeff);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    color: #333;
+}
+#companyLogo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    transition: width 0.3s, height 0.3s;
+}
+
+#companyLogo:hover {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    background-color: #3498db00;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 8px;
+    padding: 8px;
+    background: linear-gradient(to right, #3498db, #00eeff);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+#academy {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    color: #333;
+}
+
+#registrantsCount {
+    font-size: 13px;
+    color: #333;
+    animation: slide-up 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background: linear-gradient(to right, #3498db, #00eeff);
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style css.css">
+    <script src="script.js" defer></script>
+    <title>XENZA ACADEMY</title>
+</head>
+<body>
+    <header>
+        <img src="xz_tower-removebg-preview.png" alt="Company Logo" id="companyLogo">
+        <h1>XENZA ACADEMY</h1>
+    </header>
+    <div id="academy">
+        <h2 id="registrantsCount">Pendaftar saat ini: </h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateToAcademy()">Academy</a></li>
+            <li><a href="https://xenzadigitalgroup.github.io/my.id/form%20daftar.html">Daftar Academy</a></li>
+            <li><a href="https://xenzadigitalgroup.github.io/my.id/tes%20koding.html">Code Editor</a></li>
+        </ul>
+    </nav>
+
+    <div id="article">
+        <h2>Mengenai Xenza Academy</h2>
+        <p>Xenza Academy adalah tempat pembelajaran program seperti : hmtl, css, dan javascript. Xenza Academy adalah tempat
+            belajar yang di buat oleh XENZA DIGITAL GROUP untuk membantu mahasiswa/pelajar agar lebih memahami
+            bahasa pemograman.
+        </p>
+        <p>Untuk biaya pendaftaran dimulai dari Rp15.000, dan kamu sudah bisa mempelajari bahasa pemograman secara online
+            dimana saja dan kapan saja.
+        </p>
+    </div>
+
+<footer>
+        <p>&copy; 2024 XENZA DIGITAL GROUP</p>
+</footer>
+
+    <script>
+        // Fungsi untuk mendaftarkan email pengguna
+        function registerUser(email) {
+            // Mendapatkan data pengguna yang sudah terdaftar
+            const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+
+            // Memeriksa apakah email sudah terdaftar
+            const isEmailRegistered = registeredUsers.includes(email);
+
+            if (!isEmailRegistered) {
+                // Jika email belum terdaftar, tambahkan email ke daftar
+                registeredUsers.push(email);
+                localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
+                alert('Registrasi berhasil!');
+            } else {
+                // Jika email sudah terdaftar, arahkan ke halaman Academy Materi
+                alert('Selamat datang di Academy Materi!');
+                window.location.href = 'academy-materi.html'; // Ganti dengan nama halaman sebenarnya
+            }
+        }
+
+        function navigateToAcademy() {
+            // Contoh penggunaan: Mendaftarkan email "user@example.com"
+            registerUser('user@example.com');
+        }
+    </script>
+</body>
+</html>
