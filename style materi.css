@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://wallpaperbat.com/img/820629-jakarta-wallpaper.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #00eeff);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 217, 255, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(0, 119, 255, 0.9);
+}
+
+footer {
+    background: linear-gradient(to right, #3498db, #00eeff);
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+/* (CSS yang sama seperti sebelumnya) */
+
+#joinInfoContainer {
+    text-align: center;
+}
+
+#progressBarContainer {
+    width: 50%;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 20px;
+    background-color: #3498db;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+#percentageText {
+    margin-top: 10px;
+}
+/* (CSS yang sudah ada) */
+
+/* (CSS yang sudah ada) */
+
+#teachersTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+#teachersTable th, #teachersTable td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color: #000; /* warna teks pada tabel */
+}
+
+#teachersTable th {
+    background: linear-gradient(to right, #3498db, #00eeff);
+}
+
+#statusAndi, #statusNina, #statusHadi, #statusFirja {
+    font-weight: bold;
+}
+
+#statusAndi.online {
+    color: #008000;
+}
+
+#statusAndi.offline {
+    color: #ff0000;
+}
+
+#statusNina.online {
+    color: #008000;
+}
+
+#statusNina.offline {
+    color: #ff0000;
+}
+
+#statusHadi.online {
+    color: #008000;
+}
+
+#statusHadi.offline {
+    color: #ff0000;
+}
+
+#statusFirja.online {
+    color: #008000;
+}
+
+#statusFirja.offline {
+    color: #ff0000;
+}
